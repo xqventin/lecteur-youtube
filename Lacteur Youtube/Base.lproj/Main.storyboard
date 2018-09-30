@@ -20,6 +20,46 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2q-89-0GX">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChansonCell" rowHeight="121" id="Clf-6X-u1v" customClass="ChansonCell" customModule="Lacteur_Youtube" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="121"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Clf-6X-u1v" id="8jX-sP-dwp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kUS-I3-trZ">
+                                                    <rect key="frame" x="8" y="20.5" width="150" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="FGF-s8-LGs"/>
+                                                        <constraint firstAttribute="width" constant="150" id="WbC-gI-qTC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKw-jW-Xk8">
+                                                    <rect key="frame" x="158" y="50" width="207" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="leading" secondItem="8jX-sP-dwp" secondAttribute="leading" constant="8" id="Bo8-K0-9md"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="leading" secondItem="kUS-I3-trZ" secondAttribute="trailing" constant="15" id="DXz-M4-3gC"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="centerY" secondItem="8jX-sP-dwp" secondAttribute="centerY" id="Z9Z-Dy-vXW"/>
+                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="centerX" secondItem="8jX-sP-dwp" secondAttribute="centerX" id="aye-vo-vHG"/>
+                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="centerY" secondItem="8jX-sP-dwp" secondAttribute="centerY" id="b1W-vJ-lUF"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="centerX" secondItem="8jX-sP-dwp" secondAttribute="centerX" id="hwl-VI-6qT"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="leading" secondItem="kUS-I3-trZ" secondAttribute="trailing" id="oqZ-N9-wfW"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="trailing" secondItem="8jX-sP-dwp" secondAttribute="trailingMargin" constant="5" id="rM0-6h-UC5"/>
+                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="leading" secondItem="8jX-sP-dwp" secondAttribute="leading" constant="8" id="sZo-zw-5Yv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artisteEtTitreLabel" destination="VKw-jW-Xk8" id="OOc-9i-8Kt"/>
+                                            <outlet property="miniature" destination="kUS-I3-trZ" id="Pxd-lJ-tjE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,4 +99,7 @@
             <point key="canvasLocation" x="125.59999999999999" y="-564.46776611694156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="960" height="553"/>
+    </resources>
 </document>
