@@ -29,29 +29,30 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kUS-I3-trZ">
-                                                    <rect key="frame" x="8" y="20.5" width="150" height="80"/>
+                                                    <rect key="frame" x="15" y="20.5" width="150" height="80"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="FF9-o8-ugX"/>
                                                         <constraint firstAttribute="height" constant="80" id="FGF-s8-LGs"/>
-                                                        <constraint firstAttribute="width" constant="150" id="WbC-gI-qTC"/>
+                                                        <constraint firstAttribute="width" constant="150" id="oZU-Oz-0kY"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKw-jW-Xk8">
-                                                    <rect key="frame" x="158" y="50" width="207" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKw-jW-Xk8">
+                                                    <rect key="frame" x="173" y="58" width="187" height="5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="187" id="Z3b-cZ-dSj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="4"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="leading" secondItem="8jX-sP-dwp" secondAttribute="leading" constant="8" id="Bo8-K0-9md"/>
-                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="leading" secondItem="kUS-I3-trZ" secondAttribute="trailing" constant="15" id="DXz-M4-3gC"/>
-                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="centerY" secondItem="8jX-sP-dwp" secondAttribute="centerY" id="Z9Z-Dy-vXW"/>
-                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="centerX" secondItem="8jX-sP-dwp" secondAttribute="centerX" id="aye-vo-vHG"/>
-                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="centerY" secondItem="8jX-sP-dwp" secondAttribute="centerY" id="b1W-vJ-lUF"/>
-                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="centerX" secondItem="8jX-sP-dwp" secondAttribute="centerX" id="hwl-VI-6qT"/>
-                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="leading" secondItem="kUS-I3-trZ" secondAttribute="trailing" id="oqZ-N9-wfW"/>
-                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="trailing" secondItem="8jX-sP-dwp" secondAttribute="trailingMargin" constant="5" id="rM0-6h-UC5"/>
-                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="leading" secondItem="8jX-sP-dwp" secondAttribute="leading" constant="8" id="sZo-zw-5Yv"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="centerX" secondItem="8jX-sP-dwp" secondAttribute="centerX" id="0kB-sT-x1D"/>
+                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="leading" secondItem="8jX-sP-dwp" secondAttribute="leadingMargin" id="Cpg-Qg-nEK"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="trailing" secondItem="8jX-sP-dwp" secondAttribute="trailingMargin" id="Qg2-ik-WVx"/>
+                                                <constraint firstItem="kUS-I3-trZ" firstAttribute="centerY" secondItem="8jX-sP-dwp" secondAttribute="centerY" id="czB-CA-chR"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="centerY" secondItem="8jX-sP-dwp" secondAttribute="centerY" id="gKM-KL-0aR"/>
+                                                <constraint firstItem="VKw-jW-Xk8" firstAttribute="leading" secondItem="kUS-I3-trZ" secondAttribute="trailing" constant="8" id="tSl-h1-sS4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

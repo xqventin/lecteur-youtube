@@ -27,10 +27,10 @@ class ChansonCell: UITableViewCell {
     func creerCell(_ chanson: Chanson){
         self.chanson = chanson
         
-        let attributed = NSMutableAttributedString(string: self.chanson.titre, attributes: [.font:UIFont.boldSystemFont(ofSize: 20), .foregroundColor: UIColor.black])
+        let attributed = NSMutableAttributedString(string: self.chanson.titre, attributes: [.font:UIFont.boldSystemFont(ofSize: 15), .foregroundColor: UIColor.black])
         
-        let secondeLigne = NSAttributedString(string: "\n" + self.chanson.titre
-            , attributes: [.font: UIFont.italicSystemFont(ofSize: 20), .foregroundColor: UIColor.darkGray])
+        let secondeLigne = NSAttributedString(string: "\n Par : " + self.chanson.artiste
+            , attributes: [.font: UIFont.italicSystemFont(ofSize: 12), .foregroundColor: UIColor.darkGray])
         
         attributed.append(secondeLigne)
         artisteEtTitreLabel.attributedText = attributed
